@@ -1,0 +1,23 @@
+{
+  "name": "zeppelin-aggrid",
+  "description" : "Data render with Ag-Grid for Apache Zeppelin",
+  "version": "0.1.0",
+  "main": "index",
+  "author": "Eugene Matveyev",
+  "license": "MIT",
+  "dependencies": {
+    "zeppelin-tabledata": "*",
+    "zeppelin-vis": "*",
+    "ag-grid": "^14.2.0"
+  },
+    "keywords": [
+    "grid",
+    "zeppelin",
+    "helium"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menix/zeppelin-aggrid"
+  },
+  "icon": "<i class="fa fa-table fa-rotate-270"></i>"
+}
