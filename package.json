@@ -19,5 +19,5 @@
     "type": "git",
     "url": "git+https://github.com/menix/zeppelin-aggrid"
   },
-  "icon": "<i class="fa fa-table fa-rotate-270"></i>"
+  "icon": "<i class='fa fa-table fa-rotate-270'></i>"
 }
