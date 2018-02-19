@@ -1,6 +1,6 @@
 {
   "name": "zeppelin-aggrid",
-  "description" : "Data render with Ag-Grid for Apache Zeppelin",
+  "description" : "Data visualization with Ag-Grid for Apache Zeppelin",
   "version": "0.1.0",
   "main": "index",
   "author": "Eugene Matveyev",
