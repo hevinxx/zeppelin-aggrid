@@ -42,4 +42,9 @@ export default class AgGridTable extends Visualization {
     new agGrid.Grid(this.targetEl, this.gridOptions);
   };
 
+  setConfig(config) {
+    super.setConfig(config);
+    this.pivot.setConfig(config);
+  };
+
 }
