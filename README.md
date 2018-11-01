@@ -11,7 +11,7 @@ Place [zeppelin-aggrid.json](https://github.com/menix/zeppelin-aggrid/blob/maste
 And enable visualization from the Helium page. You can go there from dropdown menu under your username at the top right corner in Zeppelin.
 
 ## Licence key
-You have to set your licence key manually by updating the `ZEPPELIN_HOME/local-repo/vis/node_modules/zeppelin-aggrid/licenceKey.js` file in order to enable advanced ag-Grid options like Aggregation and Pivoting.
+You have to set your licence key manually by updating the `line 81` at `ZEPPELIN_HOME/local-repo/vis/node_modules/zeppelin-aggrid/aggrid-transformation.js` file in order to enable advanced ag-Grid options like Aggregation and Pivoting.
 
 ## Loading data
 You can load data in any way possible in Zeppelin. Loading from CSV file with comma delimeter is shown below.
