@@ -29,13 +29,13 @@ export default class AgGridTable extends Visualization {
         //params.api.sizeColumnsToFit();
       },
 
-      pivotMode: true,
+      pivotMode: false,
       rowData: null,
       groupIncludeFooter: true,
       showToolPanel: true,
       autoGroupColumnDef: {
         cellRendererParams: {
-          footerValueGetter: '"Total (" + x + ")"'
+          footerValueGetter: '"Total (" + x + ")"' //just example
         }
       }
     };
@@ -48,8 +48,8 @@ export default class AgGridTable extends Visualization {
   }
 
   render(data) {
-    console.log('render data', data);
-    console.log('render this.config', this.config);
+    console.log('aggrid data', data);
+    console.log('aggrid config', this.config);
 
     let columnDefs = data.columns.map(col => {
       return {'headerName': col.name, 'field': col.name.toLowerCase()}
@@ -69,9 +69,9 @@ export default class AgGridTable extends Visualization {
     this.mergeByProperty(columnDefs, customSettings.columnDefs, 'field');
 
     //Object.assign(columnDefs, customSettings.columnDefs);
-    console.log('UPDATED gridOptions', this.gridOptions);
-    console.log('UPDATED config', columnDefs);// this.gridOptions);
-    console.log('UPDATED rowData', rowData);
+    console.log('aggrid UPDATED gridOptions', this.gridOptions);
+    console.log('aggrid UPDATED config', columnDefs);
+    console.log('aggrid UPDATED rowData', rowData);
 
     this.gridOptions.api.setColumnDefs(columnDefs);
     this.gridOptions.api.setRowData(rowData);

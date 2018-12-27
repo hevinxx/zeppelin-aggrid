@@ -76,7 +76,7 @@ export default class AggridTransformation extends Transformation {
     this.tableDataColumns = tableData.columns;
     var config = this.config;
 
-    config.customSettings = config.customSettings || '{"columnDefs:[]", "api":[]}';
+    config.customSettings = config.customSettings || '{"columnDefs":[], "api":[]}';
     // Please put your licence key between the single quotes below
     config.licenceKey = '';
 
